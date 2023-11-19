@@ -1,0 +1,79 @@
+<app-title title="Defear Triger"></app-title>
+
+<section>
+    
+    <hr class="my-2">
+    @defer(on interaction ){
+        <app-heavy-loaders-fast cssClass="bg-blue-500 h-20">
+            <span>Interaccion</span>
+        </app-heavy-loaders-fast>
+    }@placeholder{
+        <div class="w-full h-20 bg-purple-100">
+            Click en el div
+        </div>
+    }
+
+    
+</section>
+
+<section>
+    <hr class="my-2">
+    <button #btnInteraccion class="p-2 text-white bg-blue-500 ro">Click me!</button>    
+    @defer(on interaction(btnInteraccion) ){
+        <app-heavy-loaders-fast cssClass="bg-blue-500 h-20">
+            <span>Interaccion</span>
+        </app-heavy-loaders-fast>
+    }@placeholder{
+        <div class="w-full h-20 bg-purple-100">
+            placeholder content
+        </div>
+    }
+
+    
+</section>
+
+
+<section>
+    <hr class="my-2">
+
+    @defer(on hover  ){
+        <app-heavy-loaders-fast cssClass="bg-blue-500 h-20">
+            <span>Interaccion</span>
+        </app-heavy-loaders-fast>
+    }@placeholder{
+        <div class="w-full h-20 bg-purple-100">
+            placeholder content
+        </div>
+    }
+    
+</section>
+
+<section>
+    <hr class="my-2">
+
+    @defer(on immediate  ){
+        <app-heavy-loaders-fast cssClass="bg-blue-500 h-20">
+            <span>On inmediate</span>
+        </app-heavy-loaders-fast>
+    }@placeholder{
+        <div class="w-full h-20 bg-purple-100">
+            placeholder content
+        </div>
+    }    
+</section>
+
+<section>
+    <hr class="my-2">
+    @defer(on timer(2000)  ){
+        <app-heavy-loaders-fast cssClass="bg-green-500 h-20">
+            <span>On Timer</span>
+        </app-heavy-loaders-fast>
+    }@placeholder{
+        <div class="w-full h-20 bg-purple-100">
+            Espera...
+        </div>
+    }
+
+    
+</section>
+
