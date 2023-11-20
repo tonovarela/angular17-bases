@@ -1,1 +1,10 @@
-<p>user works!</p>,
+<app-title [title]="nameComplete()"></app-title>
+@if(user()) {
+    <section>
+        <img [srcset]="user()?.avatar" [alt]="user()?.first_name"/>
+        {{nameComplete()}}
+    </section>
+
+}@else {
+    <h3>Espere por favor...</h3>
+}

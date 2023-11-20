@@ -5,6 +5,7 @@
     "paths": {
       "@shared":["./src/app/shared/index.ts"],
       "@services":["./src/app/services/index.ts"],
+      "@intefaces":["./src/app/interfaces/index.ts"],
     },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
